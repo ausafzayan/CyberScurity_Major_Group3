@@ -185,7 +185,7 @@ python main.py \
   --task 1 \
   --input design.pdf \
   --question "What security measures does the system use?" \
-  --model meta-llama/Llama-2-7b-chat-hf
+  --model mistralai/Mistral-7B-Instruct-v0.2
 ```
 
 **Multiple questions at once**

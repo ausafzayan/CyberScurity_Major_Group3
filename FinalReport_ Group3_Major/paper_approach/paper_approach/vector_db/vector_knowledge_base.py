@@ -36,7 +36,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 
 # LangChain Document schema — wraps text + metadata into a single object.
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
