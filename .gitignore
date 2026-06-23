@@ -49,3 +49,17 @@ Desktop.ini
 venv/
 env/
 ENV/
+
+# ignore report files
+*.json
+*.xml
+*.jsonl
+*.bin
+chroma.sqlite3
+
+# ignore bin and sqlite3
+chroma_task/
+chroma_task2_cve/
+chroma_improved/
+
+
