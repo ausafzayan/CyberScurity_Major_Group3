@@ -43,3 +43,9 @@ Desktop.ini
 *.tmp
 *.bak
 *.orig
+
+# Python Virtual Environments
+.venv/
+venv/
+env/
+ENV/

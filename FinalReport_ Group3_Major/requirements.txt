@@ -1,0 +1,30 @@
+# ── Core NLP & ML ────────────────────────────────────────────────────────────
+bert-score>=0.3.13             # contextual BERTScore (Precision, Recall, F1)
+keybert>=0.7.0                 # BERT-based keyword extraction (used via paper_approach)
+sentence-transformers>=2.2.0   # all-MiniLM-L6-v2 embedding model
+torch>=2.0.0                   # PyTorch — GPU or CPU tensor operations
+transformers>=4.35.0           # HuggingFace model loading (fallback to cloud LLM)
+# ── LangChain ────────────────────────────────────────────────────────────────
+langchain>=0.1.0               # text splitter, RetrievalQA chain
+langchain-community>=0.0.10    # HuggingFaceEmbeddings, Chroma, PyPDFLoader
+# ── Vector database ───────────────────────────────────────────────────────────
+chromadb>=0.4.0                # local persistent vector database
+# ── NLP evaluation metrics (IMP 3) ───────────────────────────────────────────
+rouge-score>=0.1.2             # ROUGE-1, ROUGE-2, ROUGE-L
+sacrebleu>=2.3.1               # standardised BLEU scoring
+# ── NLP utilities ─────────────────────────────────────────────────────────────
+nltk>=3.8.0                    # English stopwords + PorterStemmer
+# ── Caching (IMP 4) ──────────────────────────────────────────────────────────
+redis>=5.0.0                   # Redis Python client (falls back to memory dict if unavailable)
+# ── Multi-format input (IMP 6) ────────────────────────────────────────────────
+Pillow>=10.0.0                 # image file handling (used with pytesseract)
+pypdf>=3.0.0                   # PDF text extraction (used by PyPDFLoader)
+pyyaml>=6.0                    # YAML config file parsing
+pytesseract>=0.3.10            # OCR for architecture diagram images (optional)
+# ── Local LLM (IMP 5) ─────────────────────────────────────────────────────────
+ollama>=0.1.0                  # Ollama Python client (alternative: direct REST via requests)
+# ── HTTP & API ────────────────────────────────────────────────────────────────
+requests>=2.31.0               # NVD API calls + Ollama REST API
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0           # load .env file into os.environ
+tqdm>=4.66.0                   # progress bars for long operations
