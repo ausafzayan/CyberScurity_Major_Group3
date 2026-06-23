@@ -52,6 +52,9 @@ source .venv/bin/activate
 
 # Windows — PowerShell
 .venv\Scripts\Activate.ps1
+
+# Windows — Gitbash
+source .venv/Scripts/activate
 ```
 
 > **Windows PowerShell note:** If you see a script execution error, run this once as Administrator:
@@ -86,7 +89,7 @@ python -m nltk.downloader stopwords punkt
 
 ## 🔑 Configure Environment Variables
 
-Create a `.env` file inside `FinalReport_Group3_Major/`:
+Create a `.env` file inside `CS_Group3_Major_Project/`:
 
 ```bash
 # macOS / Linux
