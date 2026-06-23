@@ -23,7 +23,7 @@ from langchain_community.document_loaders import PyPDFLoader
 # RecursiveCharacterTextSplitter: splits text by trying separators in order
 # ("\n\n", "\n", " ", "") until chunks fit within chunk_size.
 # Overlap ensures context is not lost at chunk boundaries.
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # Module-level logger — prints timestamped INFO messages to stdout.
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")

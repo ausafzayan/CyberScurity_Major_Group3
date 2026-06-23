@@ -40,7 +40,7 @@ import torch
 # HuggingFacePipeline : wraps a HuggingFace pipeline as a LangChain LLM.
 # RetrievalQA         : built-in chain that combines retriever + LLM into one call.
 from langchain_community.llms import HuggingFacePipeline
-from langchain.chains import RetrievalQA
+from langchain.chains.retrieval_qa.base import RetrievalQA
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
