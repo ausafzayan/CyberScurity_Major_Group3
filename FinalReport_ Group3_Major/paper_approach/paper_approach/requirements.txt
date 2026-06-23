@@ -1,0 +1,24 @@
+# ── Core NLP & ML ────────────────────────────────────────────────────────────
+keybert>=0.7.0                 # BERT-based keyword extraction
+sentence-transformers>=2.2.0   # underlying encoder for KeyBERT & embeddings
+transformers>=4.35.0           # Llama 2 / OPT model loading
+torch>=2.0.0                   # PyTorch tensor operations (CPU or GPU)
+
+# ── LangChain ────────────────────────────────────────────────────────────────
+langchain>=0.1.0               # RetrievalQA chain, text splitter
+langchain-community>=0.0.10    # PyPDFLoader, HuggingFaceEmbeddings, Chroma
+
+# ── Vector database ───────────────────────────────────────────────────────────
+chromadb>=0.4.0                # local persistent vector database (paper uses Pinecone)
+# pinecone-client>=3.0.0       # uncomment to use cloud Pinecone instead
+
+# ── NLP utilities ─────────────────────────────────────────────────────────────
+nltk>=3.8.0                    # English stopwords + PorterStemmer
+
+# ── HTTP & data ───────────────────────────────────────────────────────────────
+requests>=2.31.0               # NVD REST API calls
+pypdf>=3.0.0                   # PDF text extraction (used by PyPDFLoader)
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0           # load .env into os.environ
+tqdm>=4.66.0                   # progress bars
