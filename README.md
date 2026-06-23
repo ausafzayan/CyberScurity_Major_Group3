@@ -22,7 +22,7 @@ Before you begin, make sure the following are installed on your system:
 
 ```bash
 git clone git@github.com:ausafzayan/CyberScurity_Major_Group3.git
-cd FinalReport_Group3_Major
+cd CS_Group3_Major_Project
 ```
 
 ### Step 2 — Verify Python 3.11
